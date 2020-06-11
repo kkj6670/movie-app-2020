@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import StateApp from './StateApp/StateApp';
 import Axios from 'axios';
-import Movie from './Movie';
+import Movie from './MovieApp/Movie';
 
 class App extends React.Component {
   state = {
@@ -38,7 +38,6 @@ class App extends React.Component {
               <span className="loader-text">Loading...</span>
             </li>
           : movies.map(movie => {
-            console.log(movie, "무비 map");
             return (
                 <Movie
                   key={movie.id}
@@ -47,6 +46,7 @@ class App extends React.Component {
                   title={movie.title}
                   summary={movie.summary}
                   poster={movie.medium_cover_image}
+                  genres={movie.genres}
                 />
             )
           })}
