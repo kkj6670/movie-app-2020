@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./movie.css";
 
 function Movie({id, year, title, summary, poster, genres}){
-    const maxLen = 290;
+    const maxLen = 260;
     const fullSummary = summary.slice(0,maxLen);
     summary =  fullSummary.length >= maxLen ? summary.slice(0,maxLen-5)+"....." : fullSummary;
     return(
