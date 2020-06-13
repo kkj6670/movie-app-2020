@@ -1,0 +1,21 @@
+.section.movie{
+    width:100%;
+    padding:0 140px;
+    min-height:calc(100vh - 100px);
+}
+body::-webkit-scrollbar {
+    background: #e9e9e9;
+    border-radius:20px;
+    width:9px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #a2a2a2;
+    border-radius: 20px;
+}
+.movie-list-box{
+    width:100%;
+    min-height:calc(100vh - 100px);
+    overflow:hidden;
+    box-sizing:border-box;
+    margin-bottom:100px;
+}

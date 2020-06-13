@@ -1,0 +1,27 @@
+.gnb-box{
+    width:100%;
+    height:100px;
+    background-color:#a3b1c7;
+    border-bottom:1px solid #ececec;
+}
+.gnb-box.fixed{
+    position:fixed;
+    z-index: 1;
+    top:0;
+}
+.gnb{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.gnb li{
+    display:inline-block;
+    margin:0 20px;
+}
+.gnb li a{
+    font-size:1.5em;
+    color:#eaeef4;
+    font-weight: bold;
+}

@@ -9,6 +9,8 @@ html,body,#root{
 }
 body{
     font-size:0.8vw;
+    color:#333;
+    background-color:#eaeef4;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight:normal;
@@ -18,4 +20,9 @@ ul,li{
 }
 img{
     border:0 none;
+}
+a:link,
+a:visited{
+    color:#333;
+    text-decoration: none;
 }
