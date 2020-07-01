@@ -23,8 +23,12 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    console.log("컴포넌트 마운트!");
+    console.log("HOME 컴포넌트 마운트!");
     this.getMovies();
+  }
+
+  componentWillUnmount(){
+    console.log("HOME 컴포넌트 언마운트!");
   }
 
   render() {

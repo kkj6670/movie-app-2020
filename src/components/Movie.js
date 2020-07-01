@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./Movie.css";
 
-function Movie({id, year, title, summary, poster, genres}){
+function Movie({id, year, title, summary, poster, genres=[]}){
     const maxLen = 260;
     const fullSummary = summary.slice(0,maxLen);
     summary =  fullSummary.length >= maxLen ? summary.slice(0,maxLen-5)+"....." : fullSummary;
@@ -44,7 +44,7 @@ Movie.propTypes = {
     title: PropTypes.string.isRequired,
     summary: PropTypes.string.isRequired,
     poster: PropTypes.string.isRequired,
-    genres: PropTypes.arrayOf(PropTypes.string).isRequired
+    genres: PropTypes.arrayOf(PropTypes.string)
 }
 
 export default Movie;
